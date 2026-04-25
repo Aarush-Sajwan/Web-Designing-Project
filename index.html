@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeTracker Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> LifeTracker
+            </div>
+            <nav class="menu" id="sidebar-menu">
+                <a href="#" class="nav-item active" data-section="Dashboard"><i class="fa-solid fa-table-cells-large"></i> Dashboard</a>
+                <a href="#" class="nav-item" data-section="Health"><i class="fa-solid fa-droplet"></i> Health</a>
+                <a href="#" class="nav-item" data-section="Studies"><i class="fa-solid fa-book"></i> Studies</a>
+                <a href="#" class="nav-item" data-section="Habits"><i class="fa-solid fa-arrows-rotate"></i> Habits</a>
+                <a href="#" class="nav-item" data-section="Goals"><i class="fa-solid fa-chart-simple"></i> Goals</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1 id="section-heading">Dashboard</h1>
+                <p id="current-date"></p>
+            </div>
+
+            <div id="input-controls" class="input-container" style="display: none;">
+                <input type="text" id="task-name" placeholder="Task Name">
+                <input type="time" id="task-time">
+                <button id="add-task-btn" class="primary-btn">Add Task</button>
+            </div>
+
+            <div class="dashboard-grid" id="main-grid"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
