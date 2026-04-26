@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LifeTracker Dashboard</title>
+    <title>LifeTracker |</title>
+    <style>
+        #section-heading {
+            font-family: 'Oswald', sans-serif; font-size: 5rem; font-weight: 900; line-height: 1; background: linear-gradient(to bottom, #fff 40%, rgba(255,255,255,0.1)); background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -28,10 +33,12 @@
                 <p id="current-date"></p>
             </div>
 
-            <div id="input-controls" class="input-container" style="display: none;">
-                <input type="text" id="task-name" placeholder="Task Name">
+            <div id="input-controls" class="input-container">
+                <input type="text" id="task-name" placeholder="What needs to be done?">
                 <input type="time" id="task-time">
-                <button id="add-task-btn" class="primary-btn">Add Task</button>
+                <button id="add-task-btn" class="primary-btn">
+                    <i class="fa-solid fa-plus"></i> Add Task
+                </button>
             </div>
 
             <div class="dashboard-grid" id="main-grid"></div>
